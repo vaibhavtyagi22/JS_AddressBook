@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <title>Address Book</title>
+        <meta name="description" content="Address Book app developed using local storage">
+        <meta name="author" content="Vaibha Tyagi">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/store.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/address.book.js"></script>
+        <script src="js/app.js"></script>       
+    </head>
+    <body>
+    <div class="wrapper">
+    <div id="contact-panel">
+        <div class="panel-header">
+            <span class="btn btn-grp">Groups</span>
+            <span class="btn heading">All Contacts</span>
+            <span class="btn" id="btn-add">&#43;</span>
+        </div>
+        <div class="search-box">
+            <input id="search" name="search" type="text" placeholder="Search">
+        </div>
+        <div id="addressBook">
+            <div class="contact-list-box">
+                <div class="btn-hash">&#35;</div>
+                <ul id="contactList">
+                </ul>
+            </div>
+            <div class="alphabet-links-box">
+                <ul id="alphabetLinks">               
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="desc-panel">
+        <div class="panel-header">
+            <span class="btn" id="btn-edit">Edit</span>
+        </div>
+        <div id="contact-details-box" class="contact-box">
+            
+        </div>
+        <form id="contact-details-form" class="contact-box">
+             <p class=' contact-name bb'>
+                 <input type="text" name="firstName" id="first-name" placeholder="First name">
+                 <input type="text" name="lastName" id="last-name" placeholder="Last name">
+             </p>
+            <div class='bb'>
+                <div class="contact-number">
+                    <!-- <label for="mobilePhone">Mobile Phone</label> -->
+                    <input type="text" name="mobilePhone" id="mobile-phone" placeholder="Mobile Phone" maxlength="10">
+                </div>
+                <div class="contact-number">
+                    <!-- <label for="homePhone">Home Phone</label> -->
+                    <input type="text" name="homePhone" id="home-phone" placeholder="Home Phone" maxlength="10">
+                </div>
+            </div>
+            <div class="contact-email bb">
+                <!-- <label for="email">Email</label> -->
+                <input type="text" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="contact-address">
+                <!-- <label for="address">Address</label> -->
+                <textarea placeholder="Address" rows="4" id="address"></textarea>
+            </div>
+            <div>
+                <span class="btn" id="btn-save">Save Contact</span>
+                <span class="btn" id="btn-back">Back</span>
+            </div>           
+        </form>
+    </div>        
+    </div>
+    </body>
+</html> 
